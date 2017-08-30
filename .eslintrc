@@ -1,6 +1,16 @@
 {
   "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+   },
    "rules": {
-    "react/require-extension": "off"
+    "react/require-extension": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "comma-dangle": ["error", "never"],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": 0
   }
 }
